@@ -1,13 +1,13 @@
 import numpy as np
 
 import robosuite
-from env import NewLift
+from env import Jenga
 from model import NaiveModel
 
 # initialize environment
 robots = "IIWA"
 env = robosuite.make(
-    'NewLift',
+    'Jenga',
     robots,
     has_renderer=True,
     has_offscreen_renderer=False,
